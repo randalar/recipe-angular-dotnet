@@ -31,7 +31,7 @@ namespace AngularWithASP.Server.Data
                 Instructions = [
 
                     ],
-
+                Category = "Cajun stew"
             }
         ];
     }
