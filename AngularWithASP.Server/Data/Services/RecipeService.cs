@@ -3,11 +3,12 @@ using AngularWithASP.Server.Data.Services;
 
 namespace AngularWithASP.Server.Data.Services
 {
-    public class RecipeService : IRecipeService
+    public class RecipeService : IRecipeS'ervice
+
     {
         public void AddRecipe(Recipe newRecipe)
         {
-            throw new NotImplementedException();
+            Data.Recipes.Add(newRecipe);
         }
 
         public void DeleteRecipe(int id)
@@ -17,7 +18,8 @@ namespace AngularWithASP.Server.Data.Services
 
         public List<Recipe> GetAllRecipes()
         {
-            throw new NotImplementedException();
+            // this format replaces return Data.Recipes.ToList() in C# 12.
+            return [.. Data.Recipes];
         }
 
         public Recipe GetRecipeById(int id)

@@ -69,7 +69,8 @@ namespace AngularWithASP.Server.Data
                     "1/2 tsp salt",
                     "1/2 tsp ground black pepper",
                     "2 tsp minced garlic",
-                    "6-8 warm tortillas"
+                    "6-8 warm tortillas",
+                    "2 sealable food-safe bags"
                     ],
                 Instructions = [
                     "1. Place the meat into a sealable bag. Place the peppers and onion in a separate sealable bag. "+
@@ -81,7 +82,7 @@ namespace AngularWithASP.Server.Data
                     "just tender crisp, approximately 5 minutes.  Remove from the skillet and put on a plate.",
                     "3. Place the meat into the same skillet.  When it is cooked throughout, add the vegetables and "+
                     "the remaining marinade back to the skillet.  Remove from heat.",
-                    "4. Serve with the warmed tortillas and any desired garnishes (e.g., cilantro)"
+                    "4. Serve with the warm tortillas and any desired garnishes (e.g., cilantro)"
                     ]
             },
             new()
@@ -114,7 +115,7 @@ namespace AngularWithASP.Server.Data
                 Ingredients = [
                     "Whole pork belly (weight can vary)",
                     "Dry cure for bacon",
-                    "Large, sealable freezer bag (2 gallon works great for 9ish lbs of belly)"
+                    "Large, sealable food-safe bag (2 gallon works great for 9ish lbs of belly)"
                     ],
                 Instructions = [
                     "1. Weigh the pork belly, using grams as the measurement",
