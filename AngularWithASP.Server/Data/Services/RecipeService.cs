@@ -3,7 +3,7 @@ using AngularWithASP.Server.Data.Services;
 
 namespace AngularWithASP.Server.Data.Services
 {
-    public class RecipeService : IRecipeS'ervice
+    public class RecipeService : IRecipeService
 
     {
         public void AddRecipe(Recipe newRecipe)
@@ -13,7 +13,11 @@ namespace AngularWithASP.Server.Data.Services
 
         public void DeleteRecipe(int id)
         {
-            throw new NotImplementedException();
+            var recipe = Data.Recipes.FirstOrDefault(n => n.Id == id);
+            if (recipe != null)
+            {
+                Data.Recipes.Remove(recipe);
+            }
         }
 
         public List<Recipe> GetAllRecipes()
@@ -24,12 +28,24 @@ namespace AngularWithASP.Server.Data.Services
 
         public Recipe GetRecipeById(int id)
         {
-            throw new NotImplementedException();
+            return Data.Recipes.FirstOrDefault(n => n.Id == id);
         }
 
         public void UpdateRecipe(int id, Recipe newRecipe)
         {
-            throw new NotImplementedException();
+            var oldRecipe = Data.Recipes.FirstOrDefault(n => n.Id == id);
+            
+            if (oldRecipe != null)
+            {
+                oldRecipe.Title = newRecipe.Title;
+                oldRecipe.Category = newRecipe.Category;
+                oldRecipe.Description = newRecipe.Description;
+                oldRecipe.Details = newRecipe.Details;
+                oldRecipe.Ingredients = newRecipe.Ingredients;
+                oldRecipe.Instructions = newRecipe.Instructions;
+
+            }
+
         }
     }
 }
