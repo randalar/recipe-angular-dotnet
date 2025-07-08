@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace AngularWithASP.Server.Controllers;
+namespace MyRecipes.Server.Controllers;
 
 [ApiController]
 [Route("[controller]")]

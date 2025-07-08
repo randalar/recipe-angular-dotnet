@@ -1,7 +1,7 @@
-﻿using AngularWithASP.Server.Data.Models;
+﻿using MyRecipes.Server.Data.Models;
 using System.Runtime.CompilerServices;
 
-namespace AngularWithASP.Server.Data
+namespace MyRecipes.Server.Data
 {
     public static class Data
     {

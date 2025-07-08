@@ -1,4 +1,4 @@
-namespace AngularWithASP.Server
+namespace MyRecipes.Server
 {
     public class WeatherForecast
     {

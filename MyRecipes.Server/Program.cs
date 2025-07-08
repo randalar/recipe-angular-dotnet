@@ -1,4 +1,4 @@
-using AngularWithASP.Server.Data.Services;
+using MyRecipes.Server.Data.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

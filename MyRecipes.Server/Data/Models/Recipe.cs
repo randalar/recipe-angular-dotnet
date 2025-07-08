@@ -1,4 +1,4 @@
-namespace AngularWithASP.Server.Data.Models
+namespace MyRecipes.Server.Data.Models
 {
     public class Recipe
     {

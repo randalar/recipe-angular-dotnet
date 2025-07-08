@@ -1,8 +1,8 @@
-﻿using AngularWithASP.Server.Data.Services;
-using AngularWithASP.Server.Data.Models;
+﻿using MyRecipes.Server.Data.Services;
+using MyRecipes.Server.Data.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AngularWithASP.Server.Controllers
+namespace MyRecipes.Server.Controllers
 {
     [Route("api/[controller]")]
     public class RecipesController(IRecipeService service) : Controller

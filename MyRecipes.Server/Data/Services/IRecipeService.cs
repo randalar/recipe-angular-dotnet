@@ -1,6 +1,6 @@
-﻿using AngularWithASP.Server.Data.Models;
+﻿using MyRecipes.Server.Data.Models;
 
-namespace AngularWithASP.Server.Data.Services
+namespace MyRecipes.Server.Data.Services
 {
     public interface IRecipeService
     {
